@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>dua</title>
+	<link rel="stylesheet" type="text/css" href="jokowi.css">
+</head>
+<body>
+
+	<div class = "judul2">
+		<h2> JOKOWI FAMILY</h2>
+	<nav>
+	<a href="#"><li>
+			<div class="dropdown" style="float:right;">
+			  <button class="dropbtn">ABOUT</button>
+			  <div class="dropdown-content">
+    <a href="jokowi1.html">JOKO WIDODO</a>
+    <a href="jokowi2.html">IRIANA</a>
+    <a href="jokowi3.html">GIBRAN RAKABUMING RAKA </a>
+    <a href="jokowi4.html">KAHIYANG AYU </a>
+    <a href="jokowi5.html">KAESANG PANGAREP</a>
+  </div>
+		</li></a>
+		<a href="jokowi6.html"><li>FAMILIY</li></a>
+		<a href="jokowi7.html"><li>GALLERY</li></a>
+
+	</nav>
+	</div>
+
+	<div class = "members">
+		<h2> FAMILY MEMBERS </h2>
+		<img class="slide" src="Joko/no_background/a.png">
+		<img class="slide" src="Joko/no_background/b.png">
+		<img class="slide" src="Joko/no_background/c.png">
+		<img class="slide" src="Joko/no_background/d.png">
+		<img class="slide" src="Joko/no_background/e.png">
+
+		<button style="margin-top: 10vw; margin-left: 0;" class="buttonleft" onclick="plusDivs(-1)">&#10094;</button>
+  		<button style="margin-left: 95vw;" class="buttonright" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("slide");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+	</script>
+	
+	</body>
+	</html>
